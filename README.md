@@ -1,27 +1,35 @@
-# AngularApiUser
+# Angular Api User
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Frontend para el registro y la autenticación de usuarios.
 
-## Development server
+## Índice
+*  **[Requerimientos](#-requerimientos)**
+*  **[Despliegue](#-despliegue-local)**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requerimientos
 
-## Code scaffolding
+```
+node v14.16.0
+npm@6.14.11
+Angular CLI v 11.2.3
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Despliegue
+### Proceso
+1. Clonar el proyecto.
+```
+git clone xxxx
+```
+2. instalar dependencias.
+```
+npm install
+```
+4. Cambiar ip del backend
+```
+Ruta /enviroments/environment.ts
+apiUrl: "http://localhost:3000/api"
+```
+5. Ejecutar el proyecto.
+```
+ng test
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

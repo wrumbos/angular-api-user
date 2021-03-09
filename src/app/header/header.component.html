@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <nav>
+    <a  routerLink="/">Inicio</a>
+    <a *ngIf="!userIsAuthenticated" routerLink="/user-form">Registrese</a>
+    <a *ngIf="userIsAuthenticated" routerLink="/user">Usuarios</a>
+    <a *ngIf="userIsAuthenticated" (click)="onLogOut()">cerrar sesión</a>
+  </nav>
+</mat-toolbar>
